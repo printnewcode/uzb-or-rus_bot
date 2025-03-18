@@ -12,7 +12,7 @@ bot = telebot.TeleBot(os.getenv('BOT_TOKEN'))
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    first_mess = "Choose a language"
+    first_mess = "Выберите язык\n\nTilni tanlang"
     markup = types.InlineKeyboardMarkup()
     btn_uzb = types.InlineKeyboardButton(text="o'zbek", callback_data='btn_uzb')
     btn_rus = types.InlineKeyboardButton(text='Русский', callback_data='btn_rus')
