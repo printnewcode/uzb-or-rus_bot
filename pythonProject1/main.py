@@ -89,7 +89,7 @@ def callback_r(call):
         bot.send_message(call.message.chat.id, RUS_R5, reply_markup=markup_rus)
     if call.data == "btn_rus_r6":
         bot.delete_message(call.message.chat.id, call.message.id)
-        bot.send_message(call.message.chat.id, RUS_R1, reply_markup=markup_rus)
+        bot.send_message(call.message.chat.id, RUS_R6, reply_markup=markup_rus)
     if call.data == "btn_uzb_r1":
         bot.delete_message(call.message.chat.id, call.message.id)
         bot.send_message(call.message.chat.id, UZB_R1, reply_markup=markup_uzb)
